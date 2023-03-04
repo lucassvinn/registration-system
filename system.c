@@ -20,6 +20,8 @@ int userDataNum(int a) {
 }
 
 int main() {
+    setlocale(LC ALL, "Portuguese");
+    
     int age;
     char name[99], password[99], go[3];
     char opt;
@@ -31,8 +33,6 @@ int main() {
     scanf("%c", &opt);
 
     if (opt == 'y') {
-
-    
         printf("Perfeito! Aqui está o menu:\n ");
         printf("Informe seu nome:\n ");
         scanf("%s", name);
